@@ -1,0 +1,62 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+/* all css related */
+.modal-override {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  max-height: -webkit-fill-available;
+}
+
+.modal-override > .ant-modal-content {
+  height: 100%;
+}
+.modal-override > .ant-modal-content > .ant-modal-header {
+  border: 0;
+}
+
+.modal-override > .ant-modal-content > .ant-modal-body {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+}
+.modal-override > .ant-modal-content > .ant-modal-body > div {
+  bottom: 35px;
+  position: absolute;
+  top: 35px;
+  overflow-y: auto;
+  right: 30px;
+  left: 30px;
+}
